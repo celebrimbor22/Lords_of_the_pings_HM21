@@ -21,3 +21,6 @@ Additionally, a second model, employing depthwise separable convolutions and den
 The users will take a picture of themselves with an integrated webcam. After that, with the press of a button, the face detection algorithm is run on the picture and sends back the result of the aforementioned categories. 
 
 ## IBM Watson Assistant
+
+IBM Watson Assistant is a service on the IBM Cloud to help you build and deploy virtual assistants.
+Watson work by nodes, each node has an soecifict funtion that can lead to another node or end there. In the firts half of the diagram have a series of simple question to make feel the user more confortable chating with the bot
