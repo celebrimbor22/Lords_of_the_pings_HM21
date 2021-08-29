@@ -1,4 +1,7 @@
 # Lords_of_the_pings_HM21
+---
+## **BuddyBot** - *Your Emotional Assistant App*
+----
 
 ## Table of contents:
 1. [Face Detection and Facial Expression](#Face-Detection-and-Facial-Expression)
