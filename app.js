@@ -1,7 +1,7 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 
-emocion = params.result
+emocion = params.result;
 
 document.addEventListener('DOMContentLoaded', (event) => {
     swal({
