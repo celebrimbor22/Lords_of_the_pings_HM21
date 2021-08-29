@@ -19,30 +19,64 @@ async function loadModels() {
 
 async function detectFace() {
   // Run the detection algorithm
+  let successfulDetection = true
+  let moods = {}
   const detection = await faceapi.detectSingleFace(imagePlaceholder).withFaceExpressions()
   console.log(detection)
-  if (!detection) console.error("Undefined detection result")
-  console.log(detection.expressions)
-  const moods = detection.expressions
+  if (!detection) {
+    console.error("Undefined detection result")
+    successfulDetection = false
+  } else {
+    console.log(detection.expressions)
+    moods = detection.expressions
+  }
 
   // Find the maximum confidence value
   // This max corresponds to the expression detected
-  let maxValue = moods[possibleMoods[0]]
-  let resultingExpression = possibleMoods[0]
-  for (mood in moods) {
-    if (possibleMoods.includes(mood)) {
-      let currValue = moods[mood]
-      if (currValue > maxValue) {
-        maxValue = currValue
-        resultingExpression = mood
+  let resultingExpression = 'undefined'
+  if (successfulDetection) {
+    let maxValue = moods[possibleMoods[0]]
+    resultingExpression = possibleMoods[0]
+    for (mood in moods) {
+      if (possibleMoods.includes(mood)) {
+        let currValue = moods[mood]
+        if (currValue > maxValue) {
+          maxValue = currValue
+          resultingExpression = mood
+        }
       }
     }
+    // Print result to console
+    console.log(resultingExpression)
+    console.log(maxValue)
   }
 
-  // Display result
-  console.log(resultingExpression)
-  console.log(maxValue)
-  resultBox.innerHTML = `Your expression is ${resultingExpression}`
+  // Draw rectangle on top of detected face
+  if (successfulDetection) {
+    console.log(detection.detection._box)
+    const box = detection.detection._box
+    canvas.getContext('2d').beginPath()
+    canvas.getContext('2d').lineWidth = "3"
+    canvas.getContext('2d').strokeStyle = "red"
+    canvas.getContext('2d').rect(box.x, box.y, box.width, box.height);
+    canvas.getContext('2d').stroke()
+  }
+
+  // Display the result
+  if (successfulDetection) {
+    resultBox.innerHTML = `Your expression is ${resultingExpression}`
+  } else {
+    resultBox.innerHTML = `We did not detect a face :(`
+  }
+
+  setTimeout(() => {
+    const baseURL = window.location.hostname
+    // window.location = `${baseURL}/Results.html?result=${resultingExpression}`
+    const newURL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/Results.html?result=${resultingExpression}`
+    console.log(newURL)
+    //window.location.replace(`${baseURL}/Results.html?result=${resultingExpression}`);
+    window.location.href = newURL;
+  }, 5000);
 }
 
 loadModels()
