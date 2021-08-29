@@ -13,8 +13,10 @@ const repoPath = 'Lords_of_the_pings_HM21'
 
 async function loadModels() {
   // Load model weights for Face Detection and Face Expression
-  await faceapi.loadSsdMobilenetv1Model(`/${repoPath}/models`)
-  await faceapi.loadFaceExpressionModel(`${repoPath}/models`)
+  console.log(window.location.hostname)
+  console.log(window.location.pathname)
+  await faceapi.loadSsdMobilenetv1Model(`/models`)
+  await faceapi.loadFaceExpressionModel(`/models`)
   console.log(faceapi.nets)
   console.log("Application started.")
 }
