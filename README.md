@@ -29,3 +29,14 @@ The users will take a picture of themselves with an integrated webcam. After tha
 ![Neutral Test](/images/neutral-test.png)
 
 ## IBM Watson Assistant
+
+IBM Watson Assistant is a service on the IBM Cloud to help you build and deploy virtual assistants. IBM cloud service provide you with the script to use in the java script code to desplay the assitant.
+
+Watson work by nodes, each node has an specifict funtion that can lead to another node or end there. The firts half of the diagram it havr have a series of simple question to make feel the user more confortable chating with the bot.
+
+The next part of the chatbot consists in train the AI to recognize four basic emotions: angry, happiness, sadness, and neutral. 
+The node methodology was continued, but this time, each node detects an emotion and proceeds to process the feeling and provide a solution. Each node was trained with keywords, which help Watson's training.
+
+Depending on the feeling detected in the sentence, the chatbot will give a result, selected in a bank of responses and gives the telephone number and the TeQueremos link in order for the user to keep track of their emotional state.
+
+
