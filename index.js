@@ -76,3 +76,27 @@ shootButton.addEventListener('click', function() {
 
 // When clicked, run Face Detection algorithm
 detectionButton.addEventListener("click", detectFace)
+
+
+/*playlist 
+
+felicidad
+
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLTmlC?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9XIFQuFvzM4?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+Enojo
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVtFO27AQ6dF?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3rxVfibe1L0?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+Tristeza
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTXGqmP0bfT3?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9Dh2wgiAwVX?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+neutral
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXd9zR7tdziuQ?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4gOolUyeDaQ?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+*/
