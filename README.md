@@ -22,6 +22,6 @@ The users will take a picture of themselves with an integrated webcam. After tha
 
 ## IBM Watson Assistant
 
-IBM Watson Assistant is a service on the IBM Cloud to help you build and deploy virtual assistants. IBM cloud service provide ypu with the script to use in the java script code to desplay the assitant.
+IBM Watson Assistant is a service on the IBM Cloud to help you build and deploy virtual assistants. IBM cloud service provide you with the script to use in the java script code to desplay the assitant.
 
 Watson work by nodes, each node has an specifict funtion that can lead to another node or end there. The firts half of the diagram it havr have a series of simple question to make feel the user more confortable chating with the bot
