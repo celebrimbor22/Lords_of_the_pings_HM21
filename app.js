@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             $("playlist").replaceWith('<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXd9zR7tdziuQ?theme=0" width="90%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>');    
             break;
         default: 
-        $("playlist").replaceWith('<p> undefined emotion, can not get a playlist</p>');
+        $("playlist").replaceWith('<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXd9zR7tdziuQ?theme=0" width="90%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>');
                 
         }
 
