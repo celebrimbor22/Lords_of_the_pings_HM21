@@ -42,5 +42,5 @@ The next part of the chatbot consists in train the AI to recognize four basic em
 The node methodology was continued, but this time, each node detects an emotion and proceeds to process the feeling and provide a solution. Each node was trained with keywords, which help Watson's training.
 
 Depending on the feeling detected in the sentence, the chatbot will give a result, selected in a bank of responses and gives the telephone number and the TeQueremos link in order for the user to keep track of their emotional state.
-
+![chatbot1](/images/chatbot1.jpeg)
 
