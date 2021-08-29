@@ -76,7 +76,8 @@ async function detectFace() {
 
   setTimeout(() => {
     // Redirect to second page once 5 secs have elapsed
-    const newURL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/Results.html?result=${resultingExpression}`
+    const baseURL = `${window.location.pathname}`
+    const newURL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/${baseURL}/Results.html?result=${resultingExpression}`
     console.log(newURL)
     window.location.href = newURL;
   }, 5000);
