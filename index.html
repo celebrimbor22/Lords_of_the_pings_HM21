@@ -7,9 +7,16 @@
   <title>Document</title>
 </head>
 <body>
+  <button id="start-camera">Start Camera</button>
+  <video id="video" width="320" height="240" autoplay></video>
+  <button id="click-photo">Take Photo</button>
+  <canvas id="canvas" width="320" height="240"></canvas>
+
+  <img id="imagePlaceholder">
+
   <button id="myBtn">Detect Facial Expression</button>
   <p id="myResult"></p>
-  <img id="myImg" src="images/person-smiling.png">
+
   <script src="dist/face-api.js"></script>
   <script src="index.js"></script>
 </body>
