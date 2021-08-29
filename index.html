@@ -4,20 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <title>Document</title>
+  <style>
+    .widget {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
 </head>
 <body>
-  <button id="start-camera">Start Camera</button>
-  <video id="video" width="320" height="240" autoplay></video>
-  <button id="click-photo">Take Photo</button>
-  <canvas id="canvas" width="320" height="240"></canvas>
+  <div class="container">
+    <!-- Header -->
+    <div class="row text-center">
+      <h1 class="display-1">BuddyBot</h1>
+      <p class="lead-1">
+        A través de una foto, analizamos tu estado de ánimo. ¡Intentalo!
+      </p>
+    </div>
 
-  <img id="imagePlaceholder">
-
-  <button id="myBtn">Detect Facial Expression</button>
-  <p id="myResult"></p>
+    <!-- Interface -->
+    <div class="row justify-content-between align-items-start">
+      <div class="col-12 my-4 bg-light rounded-5 pd-3 widget text-center">
+        <button type="button" class="btn btn-primary" id="start-camera">Start Camera</button>
+        <video id="video" width="320" height="240" class="mx-auto" autoplay></video>
+      </div>
+      <div class="col-12 mb-4 bg-light rounded-5 pd-3 widget text-center">
+        <button type="button" class="btn btn-primary" id="click-photo">Take Photo</button>
+        <canvas id="canvas" width="320" height="240"></canvas>
+      </div>
+      <div class="col-12 mb-4 bg-light rounded-5 pd-3 widget text-center">
+        <img id="imagePlaceholder" style="display: none;">
+        <button type="button" class="btn btn-primary" id="myBtn">Detect Facial Expression</button>
+        <p id="myResult" class="mt-4">
+          The result from your picture will be shown here!
+        </p>
+      </div>
+    </div>    
+  </div>
 
   <script src="dist/face-api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
   <script src="index.js"></script>
 </body>
 </html>
