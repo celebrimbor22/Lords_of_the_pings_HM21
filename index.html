@@ -14,6 +14,11 @@
       display: flex;
       flex-direction: column;
     }
+
+    .canvas-container {
+      width: 320;
+      height: 240;
+    }
   </style>
 </head>
 <body>
@@ -41,8 +46,10 @@
         <video id="video" width="320" height="240" class="mx-auto" autoplay></video>
         <button type="button" class="btn btn-primary buttonsBuddy" id="start-camera">Start Camera</button>
       </div>
-      <div class="col-12 mb-4 bg-light rounded-5 pd-3 widget text-center">        
-        <canvas id="canvas" width="320" height="240"></canvas>
+      <div class="col-12 mb-4 bg-light rounded-5 pd-3 widget text-center">       
+        <div class="canvas-container">
+          <canvas id="canvas" width="320" height="240"></canvas>
+        </div> 
         <button type="button" class="btn btn-primary buttonsBuddy" id="click-photo">Take Photo</button>
       </div>
       <div class="col-12 mb-4 bg-light rounded-5 pd-3 widget text-center">
