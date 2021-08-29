@@ -1,5 +1,8 @@
 # Lords_of_the_pings_HM21
 
+## Table of contents:
+1. [Face Detection and Facial Expression](#Face-Detection-and-Facial-Expression)
+2. [Chatbot made with IBM Watson Assistant](##IBM-Watson-Assistant)
 
 ## Face Detection and Facial Expression
 
@@ -18,6 +21,11 @@ Additionally, a second model, employing depthwise separable convolutions and den
 
 ### How it works?
 
-The users will take a picture of themselves with an integrated webcam. After that, with the press of a button, the face detection algorithm is run on the picture and sends back the result of the aforementioned categories. 
+The users will take a picture of themselves with an integrated webcam. After that, with the press of a button, the face detection algorithm is run on the picture and sends back the result of the aforementioned categories. Below are 4 examples from the results obtained:
+
+![Happy Test](/images/happy-test.png)
+![Sad Test](/images/sad-test.png)
+![Angry Test](/images/angry-test.png)
+![Neutral Test](/images/neutral-test.png)
 
 ## IBM Watson Assistant
