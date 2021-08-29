@@ -12,18 +12,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <title>Resultados <i class="fas fa-robot"></i></title>
+  <script src="app.js"></script>
+    <title>Results <i class="fas fa-robot"></i></title>
 </head>
 <body>
-    <script>
-        swal({
-  title: "Resultados obtenidos: ",
-  text: "You clicked the button!",
-  icon: "info",
-  button: "Entendido",
-});
-    </script>
+
     <div class="header jeder">
         <header>
         <h1 class="animate__animated animate__bounce animate__repeat-2 animate__delay-1s">
@@ -69,8 +62,11 @@
         </div>
         <div class="rightcontainer">
             
-            <h4>Playlist recomendada para ti</h4>
+            <h4>Playlist recommended  for you</h4>
             
+            <div class="playlist">
+
+            </div>
             <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4gOolUyeDaQ?theme=0" width="95%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
         </div>
