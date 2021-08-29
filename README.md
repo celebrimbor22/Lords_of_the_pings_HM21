@@ -43,4 +43,5 @@ The node methodology was continued, but this time, each node detects an emotion 
 
 Depending on the feeling detected in the sentence, the chatbot will give a result, selected in a bank of responses and gives the telephone number and the TeQueremos link in order for the user to keep track of their emotional state.
 ![chatbot1](/images/chatbot1.jpeg)
+![chatbot2](/images/chatbot2.jpeg)
 
