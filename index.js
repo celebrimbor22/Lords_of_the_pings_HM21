@@ -15,8 +15,9 @@ async function loadModels() {
   // Load model weights for Face Detection and Face Expression
   console.log(window.location.hostname)
   console.log(window.location.pathname)
-  await faceapi.loadSsdMobilenetv1Model(`/models`)
-  await faceapi.loadFaceExpressionModel(`/models`)
+  const baseURL = `${window.location.pathname}`
+  await faceapi.loadSsdMobilenetv1Model(`${baseURL}/models`)
+  await faceapi.loadFaceExpressionModel(`${baseURL}/models`)
   console.log(faceapi.nets)
   console.log("Application started.")
 }
