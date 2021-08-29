@@ -2,7 +2,7 @@
 
 ## Table of contents:
 1. [Face Detection and Facial Expression](#Face-Detection-and-Facial-Expression)
-2. [Chatbot made with IBM Watson Assistant](##IBM-Watson-Assistant)
+2. [Chatbot made with IBM Watson Assistant](#ibm-watson-assistant)
 
 ## Face Detection and Facial Expression
 
