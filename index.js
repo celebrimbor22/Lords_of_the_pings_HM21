@@ -70,11 +70,9 @@ async function detectFace() {
   }
 
   setTimeout(() => {
-    const baseURL = window.location.hostname
-    // window.location = `${baseURL}/Results.html?result=${resultingExpression}`
+    // Redirect to second page once 5 secs have elapsed
     const newURL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/Results.html?result=${resultingExpression}`
     console.log(newURL)
-    //window.location.replace(`${baseURL}/Results.html?result=${resultingExpression}`);
     window.location.href = newURL;
   }, 5000);
 }
