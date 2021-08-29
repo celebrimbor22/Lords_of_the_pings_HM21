@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         button: "Entendido",
       });
 
-
+/*
       switch(emocion){
 
         case 'neutral': 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             playlist = <p> undefined emotion, can not get a playlist</p>
         
         }
-        $("playlist").replacewith(playlist);
+        $("playlist").replacewith(playlist);*/
   })
 
 
